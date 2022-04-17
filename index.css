@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#banner {
+    background: linear-gradient(rgba(0,0,0,0.5),#009688), url(/images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+}
+
+.logo {
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+
+.banner-content {
+    text-align: center;
+    padding-top: 180px;
+}
+
+.banner-content h1 {
+    font-weight: lighter;
+    font-size: 130px;
+    padding-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.banner-button {
+    margin: 70px auto 0;
+}
+
+.banner-button a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 12px;
+    border: 1px solid white;
+    transition: color 0.5s ;
+}
+
+.banner-button :hover {
+    color: black;
+    background-color: white;
+}
+
