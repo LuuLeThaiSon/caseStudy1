@@ -2,15 +2,16 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
 }
 
+/* banner */
 #banner {
     background: linear-gradient(rgba(0,0,0,0.5),#009688), url(./images/banner.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     color: white;
-    font-family: sans-serif;
 }
 
 .logo {
@@ -26,9 +27,7 @@
 }
 
 .banner-content h1 {
-    font-weight: lighter;
     font-size: 130px;
-    padding-bottom: 20px;
 }
 
 .banner-content p {
@@ -44,14 +43,69 @@
     width: 150px;
     text-decoration: none;
     display: inline-block;
-    margin: 10px;
-    padding: 12px;
-    border: 1px solid white;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: 0.5px solid white;
     transition: color 0.5s ;
+    position: relative;
+    z-index: 1;
 }
 
-.banner-button :hover {
+.banner-button a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-button a:hover span {
+    width: 100%;
+}
+
+.banner-button a:hover {
     color: black;
-    background-color: white;
 }
 
+/* sideNav */
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 250px;
+    background: #009688;
+    z-index: 2;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-button {
+    width: 50px;
+    height: 50px;
+    background-color: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#nav-button img {
+    width: 20px;
+    margin-top: 15px;
+}
