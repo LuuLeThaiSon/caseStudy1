@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding:0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Poppins', sans-serif;;
 }
 
@@ -150,24 +150,6 @@ nav ul li a {
     font-size: 50px;
 }
 
-/* .feature-content {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-}
-
-.features {
-    flex-basis: 50%;
-}
-
-.feature-img {
-    flex-basis: 50%;
-    margin: auto;
-} */
-
 .feature-content {
     display: flex;
     flex-wrap: wrap;
@@ -175,13 +157,16 @@ nav ul li a {
 }
 
 .features {
-    flex:20%;
+    flex:30%;
+    padding-top: 90px;
 }
 
 
 .feature-img img {
+    position: relative;
     width: 60%;
     border-radius: 10px;
+    right: -55px;
 }
 
 .features h1 {
@@ -191,11 +176,11 @@ nav ul li a {
     color: #009688;
 }
 
-/* .content {
+.content {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-} */
+}
 
 .feature-icon .bi {
     width: 50px;
@@ -209,5 +194,193 @@ nav ul li a {
 .content-text {
     text-align: initial;
     padding: 0 20px;
+}
+
+/* services */
+#services {
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+
+.services-content {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.service-img {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+}
+
+.service-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+
+.service-img:hover .overlay {
+    opacity: 1;
+}
+
+.hidden-text {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    opacity: 0;
+    transform: translateX(-50);
+    transition: 1s;
+}
+
+hr {
+    background: white;
+    height: 2px;
+    border: 0;
+    max-resolution: 15px auto;
+    width: 60%;
+}
+
+.hidden-text p {
+    font-size: 14px;
+}
+
+.service-img:hover .hidden-text {
+    bottom: 40%;
+    opacity: 1;
+}
+
+/* testimonial */
+#testimonial {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.testimonial-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-text {
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.testimonial-text p {
+    font-size: 14px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.user-info .bi {
+    font-size: 20px;
+    color: #009688;
+    margin-left: 10px;
+}
+
+.user-info small {
+    color: #009688;
+}
+
+.testimonial-text:hover{
+    transform: translateY(10px);
+}
+
+/* footer */
+#footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+.footer-content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-content p{
+    line-height: 35px;
+}
+
+.footer-img {
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:  translate(-50%,-50%);
+}
+
+.social-links {
+    text-align: center;
+    line-height: 45px;
+    font-size: 12px;
+}
+
+.footer-left .bi , .footer-right .bi {
+    color: #009688;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.social-links .bi {
+    color: #009688;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-links .bi:hover {
+    color: orange; 
+    transition: 0.5s;
 }
 
